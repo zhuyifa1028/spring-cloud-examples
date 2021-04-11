@@ -1,0 +1,18 @@
+server:
+  # 服务端口，使用eureka默认端口
+  port: 8761
+
+spring:
+  application:
+    # 应用名字，eureka 会根据它作为服务id
+    name: @project.artifactId@
+
+eureka:
+  instance:
+    # eureka server 实例主机名
+    hostname: localhost
+  client:
+    # 不向eureka server 获取服务列表
+    fetch-registry: false
+    # 不向eureka server 注册自己
+    register-with-eureka: false
