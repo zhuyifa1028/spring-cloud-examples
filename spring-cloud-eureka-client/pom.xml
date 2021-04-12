@@ -11,11 +11,11 @@
     </parent>
 
     <groupId>com.github.zhuyifa1028</groupId>
-    <artifactId>spring-cloud-eureka-server</artifactId>
+    <artifactId>spring-cloud-eureka-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>spring-cloud-eureka-server</name>
-    <description>服务注册中心</description>
+    <name>spring-cloud-eureka-client</name>
+    <description>服务提供方</description>
 
     <properties>
         <java.version>11</java.version>
@@ -30,8 +30,18 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
 

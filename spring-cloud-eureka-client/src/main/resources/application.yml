@@ -1,0 +1,13 @@
+server:
+  # 服务端口
+  port: 8771
+
+spring:
+  application:
+    # 应用名字，eureka 会根据它作为服务id
+    name: @project.artifactId@
+
+eureka:
+  instance:
+    # eureka server 实例主机名
+    hostname: localhost
